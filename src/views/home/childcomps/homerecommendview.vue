@@ -31,6 +31,8 @@ display: flex;
 width: 100%;
 font-size: 12px;
 margin-top: 12px;
+  text-align: center;
+
 padding: 10px 0 20px ;
 border-bottom: 8px solid #eee;
 }

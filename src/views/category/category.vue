@@ -32,7 +32,7 @@ import {getcategory,getsubcategory,getcategorydetail} from 'network/category'
 import tabmenu from './childcomps/tabmenu'
 import tabcontentcategory from './childcomps/tabcontentcategory'
 import tabcontrol from 'components/content/tabcontrol/tabcontrol'
-import { tabcontrolmixin} from 'common/mixin'
+import { tabcontrolmixin,itemmixin} from 'common/mixin'
 import tabcontentdetail from './childcomps/tabcontentdetail'
 export default {
 name:'category',
@@ -45,7 +45,7 @@ components:{
   tabcontentdetail
 
 },
-mixins:[tabcontrolmixin],
+mixins:[tabcontrolmixin,itemmixin],
 data(){
 
   return{
@@ -78,6 +78,27 @@ computed: {
   }
 
 },
+//  mounted() {
+//     //组件挂载后执行
+//     //   this.$bus.$on('itemimageload',()=>{
+//     //  this.$refs.scroll.scroll.refresh()
+//     //    console.log('itemimageload>>>')
+
+//     //  })
+//     const refresh = debounc(this.$refs.scroll.refresh, 500);
+
+//     this.itemimglisten = () => {
+//       // console.log('在home.vue里监听图片加载完后的刷新次数')
+//       refresh();
+//     };
+
+//     this.$bus.$on("itemimageload", this.itemimglisten);
+//     //这里是监听孙子组件发射的时间总线。需要自己通过
+
+//     //     setTimeout(()=>{
+//     //  console.log(this.$refs.tabcontrol.$el.offsetTop);
+//     //     },500)
+//   },
 methods: {
  
   getcategory1(){

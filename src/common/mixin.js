@@ -1,4 +1,5 @@
-export {debounc} from 'network/detail'
+import {debounc} from 'network/detail'
+
 export const itemmixin = {
 
 

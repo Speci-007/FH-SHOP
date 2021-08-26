@@ -1,8 +1,8 @@
 module.exports = {
-  configureWebpack: {
-    resolve: {
-      alias: {
-        'assets': '@/assets',
+  configureWebpack: {                  // 表示进行对webpack的config进行配置
+    resolve: {                         
+      alias: {                         // 配置别名
+        'assets': '@/assets',            //@默认表示为src
         'common': '@/common',
         'components': '@/components',
         'network': '@/network',
